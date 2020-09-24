@@ -2,7 +2,7 @@ package com.stevelinz.independentcopy;
 
 import com.stevelinz.independentcopy.reader.ListReader;
 import com.stevelinz.independentcopy.reader.Reader;
-import com.stevelinz.independentcopy.writer.ListWriter;
+import com.stevelinz.independentcopy.writer.ConsoleWriter;
 import com.stevelinz.independentcopy.writer.Writer;
 
 /**
@@ -26,10 +26,10 @@ public class Driver {
         //Reader reader = new FileReader();
         Reader reader =  new ListReader();
 
-      //  Writer writer = new ConsoleWriter();
+       Writer writer = new ConsoleWriter();
         //Writer writer = new GuiWriter();
        // Writer writer = new FileWriter();
-        Writer writer =  new ListWriter();
+
 
         /*
         Copy from reader to writer
